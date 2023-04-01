@@ -1,6 +1,6 @@
 import puppeteer from 'puppeteer';
 
-import Company from "./Company";
+import Company from "../types/Company";
 
 export default async function crawlCompanyPage(companyPageUrl: string): Promise<Company> {
     const browser = await puppeteer.launch();

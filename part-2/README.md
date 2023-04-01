@@ -7,6 +7,7 @@
 1. In this directory (/capitalize-takehome/part-2), run the following commands:
    1. `npm i`
    2. `npm run start`
+   3. If your local port 3000 is in use, please change `part-2/package.json` line 12 to use a free port on your machine
 3. In Postman or the API testing tool of your choice, send a requests to either of the following endpoints
 
 ## API Endpoints

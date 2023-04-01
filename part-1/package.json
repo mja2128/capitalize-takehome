@@ -9,6 +9,6 @@
     "typescript": "^5.0.2"
   },
   "scripts": {
-    "start": "tsc && node crawlAllCompanies.js"
+    "start": "tsc && node functions/crawlAllCompanies.js"
   }
 }
