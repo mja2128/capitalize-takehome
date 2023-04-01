@@ -1,5 +1,6 @@
 # IntelliJ stuff
 /.idea/
+capitalize-takehome.iml
 # Default ignored files
 /shelf/
 /.idea/workspace.xml
@@ -10,3 +11,5 @@
 /dataSources.local.xml
 # dependencies
 /node_modules/
+# Output data
+/part-1/companies.csv
