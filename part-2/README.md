@@ -7,7 +7,7 @@
 1. In this directory (/capitalize-takehome/part-2), run the following commands:
    1. `npm i`
    2. `npm run start`
-3. In Postman or the API testing tool of your choice, send a requests to either of the following endpoints
+3. In Postman or the API testing tool of your choice, send a request to either of the following endpoints, using the base URL of `http://localhost:3000`
 
 ## API Endpoints
 * `GET /alight-companies?name=<company name to search>`
