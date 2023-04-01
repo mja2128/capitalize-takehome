@@ -34,6 +34,9 @@ export default async function crawlCompanyPage(companyPageUrl: string): Promise<
     }
 
     // crawl company 401(k) plan info (plan name, website, etc.)
+    const providerTitleDiv = await (await page.$('text/401(k) provider')).getProperty('parentElement');
+    const providerDiv = await (await providerTitleDiv.getProperty('nextElementSibling')).getProperty('firstElementChild');
+    const providerName = await providerDiv.evaluate(el => el.textContent);
     const planInfoDiv = await page.$('text/Plan name');
     const parent = await planInfoDiv.getProperty('parentElement');
     const grandparent = await parent.getProperty('parentElement');
@@ -80,7 +83,7 @@ export default async function crawlCompanyPage(companyPageUrl: string): Promise<
         ein,
         "401kPlan": {
             name: planName,
-            provider: '',
+            provider: providerName,
             websiteURL: website,
             phoneNumber: planPhoneNumber,
             faxNumber,

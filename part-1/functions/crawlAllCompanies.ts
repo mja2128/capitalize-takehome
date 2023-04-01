@@ -34,6 +34,10 @@ async function crawlAllCompanies() {
     await browser.close();
 }
 
+crawlCompanyPage('https://www.hicapitalize.com/find-my-401k/walmart').then(c => {
+    console.log('Walmart Company Info:\n', c);
+});
+
 console.log('Crawling Capitalize Company 401(k) pages...');
 crawlAllCompanies().then(() => {
     console.log('All set! Please see ./companies.csv for the results :)');
