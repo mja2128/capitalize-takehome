@@ -4,7 +4,7 @@
 * Install Node: https://nodejs.org/en/download
 
 ## To Run:
-1. In this directory (/capitalize-takehome/part-1), run the following commands:
+1. In this directory (`/capitalize-takehome/part-1`), run the following commands:
     1. `npm i`
     2. `npm run start`
    3. When it is complete, you should now have a file called `companies.csv` in this current directory containing a set of companies with info scraped from the Capitalize Find Your 401(k) page
